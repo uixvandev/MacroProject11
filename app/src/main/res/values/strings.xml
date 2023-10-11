@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">MacroProjectKelompok11</string>
+    <string name="aqi">AQI</string>
+    <string name="pm25">PM2.5</string>
+    <string name="desc_aqi"><b>AQI (Air Quality Index)</b> adalah sebuah indeks yang digunakan untuk mengukur seberapa baik atau buruk kualitas udara di suatu wilayah atau lokasi tertentu. Ini membantu kita memahami seberapa sehat atau tidak sehat udara yang kita hirup setiap hari.</string>
+    <string name="desc_pm25"><b>Particulate Matter (PM2.5)</b> adalah partikel udara yang berukuran lebih kecil dari atau sama dengan 2.5 µm (mikrometer). \n Environmental Protection Agency (EPA) Amerika Serikat menetapkan standar PM2.5 dengan kategori sebagai berikut</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="baik">Baik</string>
+    <string name="sedang">Sedang</string>
+    <string name="tidak_sehat_bagi_kel_sensitif">Tidak sehat bagi kelompok sensitif</string>
+    <string name="tidak_Sehat">Tidak sehat</string>
+    <string name="sangat_tidak_sehat">Sangat tidak sehat</string>
+    <string name="berbahaya">Berbahaya</string>
+    <string name="indAQI_1">0-50</string>
+    <string name="indAQI_2">51-100</string>
+    <string name="indAQI_3">101-150</string>
+    <string name="indAQI_4">151-200</string>
+    <string name="indAQI_5">201-300</string>
+    <string name="indAQI_6">>301</string>
+    <string name="indPM_1">0-12</string>
+    <string name="indPM_2">12.1-35.4</string>
+    <string name="indPM_3">35.5-55.4</string>
+    <string name="indPM_4">55.5-150.4</string>
+    <string name="indPM_5">150.5-250.4</string>
+    <string name="indPM_6">>250.4</string>
 </resources>

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="black50percent">#80000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="biru_cyan">#75CFF0</color>
+    <color name="ind_baik">#9CD84E</color>
+    <color name="ind_sedang">#F8C718</color>
+    <color name="ind_tidaksehat_golsensitif">#F99049</color>
+    <color name="ind_tidaksehat">#F90217</color>
+    <color name="ind_sgttidaksehat">#9B48C1</color>
+    <color name="ind_berbahaya">#B9365F</color>
+    <color name="button_abu">#DADADA</color>
 </resources>
