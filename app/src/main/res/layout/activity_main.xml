@@ -44,6 +44,12 @@
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/imageSlider"
                 />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map"
+                android:name="com.mobile.macroprojectkelompok11.MapsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="209dp" />
         </LinearLayout>
     </ScrollView>
 
