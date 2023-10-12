@@ -110,7 +110,6 @@
                     android:layout_width="207dp"
                     android:layout_height="wrap_content"
                     android:text="@string/tidak_sehat_bagi_kel_sensitif"
-
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="16dp"

@@ -11,4 +11,5 @@
     <color name="ind_sgttidaksehat">#9B48C1</color>
     <color name="ind_berbahaya">#B9365F</color>
     <color name="button_abu">#DADADA</color>
+    <color name="primary">#75CFF0</color>
 </resources>
