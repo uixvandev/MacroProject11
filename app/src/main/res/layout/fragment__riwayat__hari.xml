@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Riwayat_Hari">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="200"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="01.00"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.00"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="21.00"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView25">
+
+        <ImageView
+            android:id="@+id/view37"
+            android:layout_width="10dp"
+            android:layout_height="144dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:id="@+id/view38"
+            android:layout_width="10dp"
+            android:layout_height="136dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="174dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="122dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="166dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="188dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="88dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="144dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_sedang" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat_golsensitif" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="178dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="170dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="168dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="177dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_hal_informasi_aqi_dan_pm25"
+            android:backgroundTint="@color/ind_tidaksehat" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
