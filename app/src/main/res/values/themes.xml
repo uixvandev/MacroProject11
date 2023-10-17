@@ -3,6 +3,7 @@
     <style name="Base.Theme.MacroProjectKelompok11" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/biru_cyan</item>
     </style>
 
     <style name="Theme.MacroProjectKelompok11" parent="Base.Theme.MacroProjectKelompok11" />
