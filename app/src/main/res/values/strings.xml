@@ -28,4 +28,8 @@
     <string name="daftar">Daftar</string>
     <string name="lokasi">Lokasi</string>
     <string name="beranda">Beranda</string>
+    <string name="peta">Peta</string>
+    <string name="artikel">Artikel</string>
+    <string name="alarm">Alarm</string>
+    <string name="title_activity_polusi_maps">PolusiMaps</string>
 </resources>

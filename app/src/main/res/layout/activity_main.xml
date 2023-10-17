@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <androidx.core.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:background="#F4F9F9"
-        tools:context=".MainActivity"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:background="#F4F9F9"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemRippleColor="#F31D1D"
+        app:menu="@menu/bottom_navigation_menu">
 
-            <com.denzcoskun.imageslider.ImageSlider
-                android:id="@+id/imageSlider"
-                android:layout_width="match_parent"
-                android:layout_height="210dp"
-                android:layout_margin="16dp"
-                android:paddingTop="16dp"
-                app:iss_auto_cycle="true"
-                app:iss_corner_radius="24"
-                app:iss_delay="0"
-                app:iss_period="1000"
-                app:iss_selected_dot="@drawable/default_selected_dot"
-                app:iss_text_align="CENTER"
-                app:iss_unselected_dot="@drawable/default_unselected_dot"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp" />
-             <TextView
-                android:id="@+id/text_lokasi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="@string/lokasi"
-                android:textColor="@color/black"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_margin="16dp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/imageSlider"
-                />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/Home"
-        android:enabled="true"
-        android:icon="@drawable/icon_back"
-        android:title="@string/beranda"/>
+        android:id="@+id/homeItem"
+        android:icon="@drawable/icon_home"
+        android:title="@string/beranda" />
     <item
-        android:id="@+id/maps"
-        android:enabled="true"
-        android:icon="@drawable/icon_back"
-        android:title="Peta"/>
+        android:id="@+id/mapsItem"
+        android:icon="@drawable/icon_maps"
+        android:title="@string/peta" />
     <item
-        android:id="@+id/article"
-        android:enabled="true"
-        android:title="Artikel"/>
+        android:id="@+id/articleItem"
+        android:icon="@drawable/icon_article"
+        android:title="@string/artikel" />
     <item
-        android:id="@+id/alarm"
-        android:enabled="true"
-        android:title="Alarm"/>
-
-
-
+        android:id="@+id/alarmItem"
+        android:icon="@drawable/icon_alarm"
+        android:title="@string/alarm" />
 </menu>
