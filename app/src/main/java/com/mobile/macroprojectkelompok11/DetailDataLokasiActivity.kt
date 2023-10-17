@@ -1,5 +1,6 @@
 package com.mobile.macroprojectkelompok11
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,14 @@ class DetailDataLokasiActivity : AppCompatActivity() {
         binding =  ActivityDetailDataLokasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(Fragment_Riwayat_Jam())
+
+        binding.imageshare.setOnClickListener{
+            val message = "Kualitas udara saat ini di Condet adalah PM2.5 sebesar 72 dan AQI mencapai 157. Jika anda berada didaerah ini, jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan."
+            intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+            startActivity(intent)
+        }
 
         binding.textView21.setOnClickListener{
             binding.textView21.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.biru_cyan))

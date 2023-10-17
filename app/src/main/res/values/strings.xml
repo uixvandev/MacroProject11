@@ -28,4 +28,11 @@
     <string name="daftar">Daftar</string>
     <string name="lokasi">Lokasi</string>
     <string name="beranda">Beranda</string>
+    <string name="inbox_message_tidaksehat">Perhatian! Kualitas udara di Parung Panjang saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.</string>
+    <string name="inbox_message_sgttidaksehat">Perhatian! Kualitas udara di Parung Panjang saat ini <b>sangat tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.</string>
+    <string name="inbox_message_tgl1">21 Sep, 8:09</string>
+    <string name="inbox_message_tgl2">18 Sep, 22:15</string>
+    <string name="inbox_message_tgl3">2 Sep, 10:00</string>
+    <string name="inbox_message_tgl4">25 Agu, 13:09</string>
+    <string name="inbox_message_tgl5">24 Agu, 18:15</string>
 </resources>
