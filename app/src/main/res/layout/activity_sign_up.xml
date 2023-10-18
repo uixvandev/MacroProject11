@@ -34,6 +34,8 @@
         android:id="@+id/edt_username"
         android:layout_width="match_parent"
         android:hint="Masukkan username"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawablePadding="10dp"
         android:layout_height="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
@@ -49,6 +51,8 @@
     <EditText
         android:id="@+id/edt_reg_password"
         android:layout_width="match_parent"
+        android:drawableLeft="@drawable/icon_lock"
+        android:drawablePadding="10dp"
         android:hint="Masukkan sandi"
         android:layout_height="48dp"
         android:ems="10"
@@ -67,6 +71,8 @@
     <EditText
         android:id="@+id/edt_reg_confirm_password"
         android:layout_width="match_parent"
+        android:drawableLeft="@drawable/icon_confirm_password"
+        android:drawablePadding="10dp"
         android:layout_height="48dp"
         android:hint="Konfirmasi sandi"
         android:inputType="textPassword"
