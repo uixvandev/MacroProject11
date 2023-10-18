@@ -80,7 +80,7 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/putih"
+            android:src="@drawable/putih"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -89,7 +89,7 @@
             android:layout_marginTop="40dp"
             android:drawableLeft="@drawable/icon_lokasi"
             android:text="condet"
-            android:textSize="20dp"
+            android:textSize="20dp"/>
 
         <TextView
 
@@ -100,7 +100,7 @@
             android:text="Tidak sehat"
             android:textColor="@color/black"
             android:textSize="35dp"
-            android:textStyle="bold">
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="57dp"
@@ -112,7 +112,7 @@
             android:text="157"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold">
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="57dp"
@@ -124,7 +124,7 @@
             android:text="72"
             android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold">
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView19"
@@ -137,7 +137,7 @@
             android:gravity="fill"
             android:text="Gunakan masker pelindung"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="18sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -149,7 +149,7 @@
             android:gravity="fill"
             android:text="Tutup jendela rumah"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="18sp"/>
 
         <ImageView
             android:id="@+id/imageView4"
@@ -158,7 +158,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="140dp"
             android:elevation="11dp"
-            android:src="@drawable/icon_masker"
+            android:src="@drawable/icon_masker"/>
 
         <ImageView
             android:id="@+id/imageView5"
@@ -169,8 +169,6 @@
             android:elevation="11dp"
             android:src="@drawable/icon_jendela" />
     </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
