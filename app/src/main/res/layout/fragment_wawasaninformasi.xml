@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".wawasaninformasi">
 
+
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:textColor="@color/black"
-        android:text="Wawasan informasi"
+        android:text="@string/wawasan_informasi"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="245dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginVertical="16dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -35,7 +36,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:contentDescription="todo"
+            android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
             android:src="@drawable/gamba1" />
 
@@ -45,7 +46,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="133dp"
             android:textColor="@color/black"
-            android:text="Pengertian jenis dan dampak polusi"
+            android:text="@string/pengertian_jenis_dan_dampak_polusi"
             android:textSize="13sp"
             android:textStyle="bold" />
 
@@ -55,7 +56,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="150dp"
             android:layout_marginEnd="15dp"
-            android:text="polusi adalah kondisi yang timbul ketika senyawa kimia energi atau polutan masuk ke lingkungan yang merusak ekologi kondisi lingkungan dan menyebabkan bahaya bagi makhluk"
+            android:text="@string/polusi_adalah_kondisi_yang_timbul_ketika_senyawa_kimia_energi_atau_polutan_masuk_ke_lingkungan_yang_merusak_ekologi_kondisi_lingkungan_dan_menyebabkan_bahaya_bagi_makhluk"
             android:textColor="#777777"
             android:textSize="12sp" />
 
@@ -64,8 +65,9 @@
             android:layout_height="48dp"
             android:layout_marginStart="14dp"
             android:layout_marginTop="195dp"
-            android:backgroundTint="@color/biru_cyan"
-            android:text="selengkapnya"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/black"
+            android:text="@string/selengkapnya"
             android:textAllCaps="false" />
     </androidx.cardview.widget.CardView>
 
@@ -74,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="245dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginVertical="16dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +85,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:contentDescription="todo"
+            android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
             android:src="@drawable/gamba2" />
 
@@ -93,7 +95,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="150dp"
             android:layout_marginEnd="15dp"
-            android:text="Berdirinya pabrik-pabrik besar, banyaknya kendaraan bermotor, asap rokok, membuat udara di kota besar semakin tercemar. Kondisi tersebut tentu berbeda dengan di pedesaan."
+            android:text="@string/berdirinya_pabrik_pabrik_besar_banyaknya_kendaraan_bermotor_asap_rokok_membuat_udara_di_kota_besar_semakin_tercemar_kondisi_tersebut_tentu_berbeda_dengan_di_pedesaan"
             android:textColor="#777777"
             android:textSize="12sp" />
 
@@ -113,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="133dp"
-            android:text="Penyebab pencemaran udara dan 5 cara mengatasinya"
+            android:text="@string/penyebab_pencemaran_udara_dan_5_cara_mengatasinya"
             android:textSize="13sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
@@ -122,6 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="245dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="16dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -129,7 +132,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:contentDescription="todo"
+            android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
             android:src="@drawable/gamba2" />
 
@@ -139,7 +142,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="150dp"
             android:layout_marginEnd="15dp"
-            android:text="Berdirinya pabrik-pabrik besar, banyaknya kendaraan bermotor, asap rokok, membuat udara di kota besar semakin tercemar. Kondisi tersebut tentu berbeda dengan di pedesaan."
+            android:text="@string/berdirinya_pabrik_pabrik_besar_banyaknya_kendaraan_bermotor_asap_rokok_membuat_udara_di_kota_besar_semakin_tercemar_kondisi_tersebut_tentu_berbeda_dengan_di_pedesaan"
             android:textColor="#777777"
             android:textSize="12sp" />
 
@@ -148,7 +151,9 @@
             android:layout_height="48dp"
             android:layout_marginStart="14dp"
             android:layout_marginTop="195dp"
-            android:backgroundTint="@color/biru_cyan"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/black"
+            android:text="@string/selengkapnya"
             android:textAllCaps="false" />
 
         <TextView
@@ -157,7 +162,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="133dp"
             android:textColor="@color/black"
-            android:text="Penyebab pencemaran udara dan 5 cara mengatasinya"
+            android:text="@string/penyebab_pencemaran_udara_dan_5_cara_mengatasinya"
             android:textSize="13sp"
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
