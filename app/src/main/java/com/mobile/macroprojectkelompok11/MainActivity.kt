@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.homeItem -> replaceFragment(FragmentHome())
                 R.id.mapsItem -> replaceFragment(FragmentMaps())
                 R.id.articleItem -> replaceFragment(wawasaninformasi())
+                R.id.alarmItem -> replaceFragment(FragmentAlarm())
 
                 else -> {
 
