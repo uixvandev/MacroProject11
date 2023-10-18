@@ -57,6 +57,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity android:name=".Izin"
+            android:exported="false"/>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
