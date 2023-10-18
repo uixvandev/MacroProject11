@@ -4,168 +4,263 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4F9F9"
     tools:context=".wawasaninformasi">
 
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:textColor="@color/black"
-        android:text="@string/wawasan_informasi"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="8dp"
+        android:background="@drawable/background_top_nav"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/wawasan_informasi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/topnav"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="245dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="16dp"
+        android:layout_marginVertical="8dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topnav">
 
-        <ImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:contentDescription="@string/todo"
-            android:scaleType="centerCrop"
-            android:src="@drawable/gamba1" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="133dp"
-            android:textColor="@color/black"
-            android:text="@string/pengertian_jenis_dan_dampak_polusi"
-            android:textSize="13sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gamba1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="15dp"
-            android:text="@string/polusi_adalah_kondisi_yang_timbul_ketika_senyawa_kimia_energi_atau_polutan_masuk_ke_lingkungan_yang_merusak_ekologi_kondisi_lingkungan_dan_menyebabkan_bahaya_bagi_makhluk"
-            android:textColor="#777777"
-            android:textSize="12sp" />
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/pengertian_jenis_dan_dampak_polusi"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/cardImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:layout_width="340dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="195dp"
-            android:backgroundTint="@color/primary"
-            android:textColor="@color/black"
-            android:text="@string/selengkapnya"
-            android:textAllCaps="false" />
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/polusi_adalah_kondisi_yang_timbul_ketika_senyawa_kimia_energi_atau_polutan_masuk_ke_lingkungan_yang_merusak_ekologi_kondisi_lingkungan_dan_menyebabkan_bahaya_bagi_makhluk"
+                android:textColor="#777777"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/titleText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/buttondetailwawasaninformasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/primary"
+                android:text="@string/selengkapnya"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="245dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="16dp"
+        android:layout_marginVertical="8dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
-        <ImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cardImage2"
+            android:layout_width="0dp"
             android:layout_height="130dp"
             android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
-            android:src="@drawable/gamba2" />
+            android:src="@drawable/gamba2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/descriptionText2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
             android:text="@string/berdirinya_pabrik_pabrik_besar_banyaknya_kendaraan_bermotor_asap_rokok_membuat_udara_di_kota_besar_semakin_tercemar_kondisi_tersebut_tentu_berbeda_dengan_di_pedesaan"
             android:textColor="#777777"
-            android:textSize="12sp" />
+            app:layout_constraintTop_toBottomOf="@+id/titleText2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <Button
-            android:layout_width="340dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="195dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="10dp"
             android:textColor="@color/black"
             android:backgroundTint="@color/primary"
             android:text="@string/selengkapnya"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionText2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
+            android:id="@+id/titleText2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="133dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
             android:text="@string/penyebab_pencemaran_udara_dan_5_cara_mengatasinya"
             android:textSize="13sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cardImage2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="245dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="16dp"
+        android:layout_marginVertical="8dp"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
-        <ImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cardImage3"
+            android:layout_width="0dp"
             android:layout_height="130dp"
             android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
-            android:src="@drawable/gamba3" />
+            android:src="@drawable/gamba3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/descriptionText3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
             android:text="@string/berdirinya_pabrik_pabrik_besar_banyaknya_kendaraan_bermotor_asap_rokok_membuat_udara_di_kota_besar_semakin_tercemar_kondisi_tersebut_tentu_berbeda_dengan_di_pedesaan"
             android:textColor="#777777"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/titleText3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <Button
-            android:layout_width="340dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="195dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
             android:backgroundTint="@color/primary"
             android:textColor="@color/black"
             android:text="@string/selengkapnya"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionText3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/titleText3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="133dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
             android:textColor="@color/black"
             android:text="@string/penyebab_pencemaran_udara_dan_5_cara_mengatasinya"
             android:textSize="13sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cardImage3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

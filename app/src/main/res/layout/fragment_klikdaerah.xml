@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".klikdaerah">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="420dp"
+        android:layout_height="728dp"
+        android:src="@drawable/klik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="cari"
+            android:textSize="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titikpol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/titikpolusi"
+        android:gravity="center"
+        android:text="157"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chard2"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/ind_tidaksehat"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titikpol">
+
+        <TextView
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Terakhir di perbarui 09.30,29 sep 2023"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/putih"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/icon_lokasi"
+            android:text="condet"
+            android:textSize="20dp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="70dp"
+            android:text="Tidak sehat"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/circle_graph_aqi_hal_detail_lokasi"
+            android:gravity="center"
+            android:text="157"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/circle_graph_pm25_hal_detail_lokasi"
+            android:gravity="center"
+            android:text="72"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="32dp"
+            android:elevation="11dp"
+            android:gravity="fill"
+            android:text="Gunakan masker pelindung"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginEnd="32dp"
+            android:elevation="11dp"
+            android:gravity="fill"
+            android:text="Tutup jendela rumah"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="140dp"
+            android:elevation="11dp"
+            android:src="@drawable/icon_masker"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="190dp"
+            android:elevation="11dp"
+            android:src="@drawable/icon_jendela" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
