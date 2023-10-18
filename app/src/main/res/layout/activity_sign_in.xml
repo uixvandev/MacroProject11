@@ -10,11 +10,12 @@
 
     <TextView
         android:id="@+id/titleSignin"
-        android:layout_width="261dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:text="Masuk menggunakan akun anda"
-        android:textSize="18sp"
+        android:text="Masuk"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,6 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 
+
     <TextView
         android:id="@+id/password"
         android:layout_width="wrap_content"
@@ -50,14 +52,16 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_username" />
 
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_reg_password"
         android:layout_width="match_parent"
-        android:hint="Masukkan kata sandi"
         android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Masukkan kata sandi"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
 
     <Button
         android:id="@+id/btn_signin"
@@ -70,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:cornerRadius="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_password" />
 
     <TextView
         android:id="@+id/lupa_pasword"
@@ -78,18 +82,30 @@
         android:layout_height="wrap_content"
         android:text="Lupa password"
         android:layout_marginTop="16dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
 
     <TextView
         android:id="@+id/txt_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Belum punya akun? daftar"
+        android:text="Belum punya akun?"
         android:layout_marginTop="16dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lupa_pasword" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/linkto_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/daftar"
+        android:textColor="@color/biru_cyan"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_sign"
+        app:layout_constraintStart_toEndOf="@+id/txt_sign"
+        app:layout_constraintTop_toTopOf="@+id/txt_sign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

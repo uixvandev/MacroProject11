@@ -64,7 +64,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="14dp"
             android:layout_marginTop="195dp"
-            android:backgroundTint="@color/material_dynamic_primary40"
+            android:backgroundTint="@color/biru_cyan"
             android:text="selengkapnya"
             android:textAllCaps="false" />
     </androidx.cardview.widget.CardView>
@@ -103,7 +103,7 @@
             android:layout_marginStart="14dp"
             android:layout_marginTop="195dp"
             android:textColor="@color/black"
-            android:backgroundTint="@color/material_dynamic_primary40"
+            android:backgroundTint="@color/biru_cyan"
             android:text="Selengkapnya"
             android:textAllCaps="false" />
 
@@ -148,8 +148,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="14dp"
             android:layout_marginTop="195dp"
-            android:backgroundTint="@color/material_dynamic_primary40"
-            android:text="Selengkapnya"
+            android:backgroundTint="@color/biru_cyan"
             android:textAllCaps="false" />
 
         <TextView
