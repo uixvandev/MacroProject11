@@ -39,4 +39,12 @@
     <string name="artikel">Artikel</string>
     <string name="alarm">Alarm</string>
     <string name="title_activity_polusi_maps">PolusiMaps</string>
+    <string name="berdirinya_pabrik_pabrik_besar_banyaknya_kendaraan_bermotor_asap_rokok_membuat_udara_di_kota_besar_semakin_tercemar_kondisi_tersebut_tentu_berbeda_dengan_di_pedesaan">Berdirinya pabrik-pabrik besar, banyaknya kendaraan bermotor, asap rokok, membuat udara di kota besar semakin tercemar. Kondisi tersebut tentu berbeda dengan di pedesaan.</string>
+    <string name="todo">todo</string>
+    <string name="penyebab_pencemaran_udara_dan_5_cara_mengatasinya">Penyebab pencemaran udara dan 5 cara mengatasinya</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="polusi_adalah_kondisi_yang_timbul_ketika_senyawa_kimia_energi_atau_polutan_masuk_ke_lingkungan_yang_merusak_ekologi_kondisi_lingkungan_dan_menyebabkan_bahaya_bagi_makhluk">polusi adalah kondisi yang timbul ketika senyawa kimia energi atau polutan masuk ke lingkungan yang merusak ekologi kondisi lingkungan dan menyebabkan bahaya bagi makhluk</string>
+    <string name="pengertian_jenis_dan_dampak_polusi">Pengertian jenis dan dampak polusi</string>
+    <string name="wawasan_informasi">Wawasan informasi</string>
+    <string name="peta_polusi">Peta Polusi</string>
 </resources>

@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId) {
                 R.id.homeItem -> replaceFragment(FragmentHome())
                 R.id.mapsItem -> replaceFragment(FragmentMaps())
+                R.id.articleItem -> replaceFragment(wawasaninformasi())
 
                 else -> {
 
