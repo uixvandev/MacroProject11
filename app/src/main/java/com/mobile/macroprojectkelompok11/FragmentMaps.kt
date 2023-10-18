@@ -44,9 +44,7 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         val locations = ArrayList<LatLng>()
 
         // Tambahkan lokasi-lokasi yang berbeda ke dalam array
-        locations.add(LatLng(36.907346, 127.649817))
-        locations.add(LatLng(37.123456, 128.789012))
-        locations.add(LatLng(37.987654, 129.345678))
+        locations.add(LatLng(-6.203099, 106.810961))
         // Tambahkan lokasi lainnya sesuai kebutuhan
 
         // Loop melalui array lokasi dan tambahkan marker untuk setiap lokasi
@@ -62,7 +60,7 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         // Pindahkan kamera ke lokasi terakhir dalam array (atau lokasi tertentu)
         if (locations.isNotEmpty()) {
             val lastLocation = locations.last()
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lastLocation, 8f))
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lastLocation, 13f))
         }
     }
 
