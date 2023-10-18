@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F9F9"
+    android:id="@+id/containerFragmentWawasanInformasi"
     tools:context=".wawasaninformasi">
 
 
@@ -161,6 +162,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <Button
+            android:id="@+id/buttondetailwawasaninformasi2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

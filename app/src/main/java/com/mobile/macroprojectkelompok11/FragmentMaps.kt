@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.MapView
@@ -29,6 +30,18 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         val imageView15 = rootView.findViewById<ImageView>(R.id.imageView15)
         var isAlternateImage = false
         var originalImage: Int = R.drawable.zona_merah // Simpan gambar awal di sini
+
+        // Atur listener untuk imageView15
+        imageView15.setOnClickListener {
+            // Inisiasi FragmentKlikDaerah
+            val fragmentKlikDaerah = klikdaerah()
+
+            // Memulai transaksi Fragment
+            val transaction: FragmentTransaction =requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.containermaps, fragmentKlikDaerah)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
         btnUdaraBersih.setOnClickListener {
             if (isAlternateImage) {
