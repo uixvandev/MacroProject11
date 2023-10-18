@@ -1,5 +1,6 @@
 package com.mobile.macroprojectkelompok11
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -26,10 +27,29 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(this)
 
+        val profile = rootView.findViewById<ImageView>(R.id.profile)
+        val infoIcon  = rootView.findViewById<ImageView>(R.id.infoIcon)
+        val inbox = rootView.findViewById<ImageView>(R.id.inboxNotifikasi)
         val btnUdaraBersih = rootView.findViewById<ImageView>(R.id.btnUdaraBersih)
         val imageView15 = rootView.findViewById<ImageView>(R.id.imageView15)
         var isAlternateImage = false
         var originalImage: Int = R.drawable.zona_merah // Simpan gambar awal di sini
+
+        profile.setOnClickListener{
+            val intent = Intent(context, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        infoIcon.setOnClickListener{
+            val intent = Intent(context, Informasiaqidanpm25_Activity::class.java)
+            startActivity(intent)
+        }
+
+        inbox.setOnClickListener {
+            val intent = Intent(context, InboxActivity::class.java)
+            startActivity(intent)
+        }
+
 
         // Atur listener untuk imageView15
         imageView15.setOnClickListener {
@@ -42,6 +62,8 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
             transaction.addToBackStack(null)
             transaction.commit()
         }
+
+
 
         btnUdaraBersih.setOnClickListener {
             if (isAlternateImage) {

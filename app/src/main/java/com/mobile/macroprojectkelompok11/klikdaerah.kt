@@ -31,6 +31,4 @@ class klikdaerah : Fragment() {
             startActivity(intent)
         }
     }
-
-
 }

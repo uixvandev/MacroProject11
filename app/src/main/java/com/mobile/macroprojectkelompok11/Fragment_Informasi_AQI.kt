@@ -7,5 +7,5 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class Fragment_Informasi_AQI : Fragment(R.layout.fragment__informasi__p_m25) {
+class Fragment_Informasi_AQI : Fragment(R.layout.fragment__informasi__a_q_i) {
 }
