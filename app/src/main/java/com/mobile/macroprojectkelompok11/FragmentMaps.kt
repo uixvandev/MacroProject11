@@ -1,5 +1,6 @@
 package com.mobile.macroprojectkelompok11
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,6 +26,8 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(this)
 
+        val btnProfileActivity = rootView.findViewById<ImageView>(R.id.profile)
+
         val btnUdaraBersih = rootView.findViewById<ImageView>(R.id.btnUdaraBersih)
         val imageView15 = rootView.findViewById<ImageView>(R.id.imageView15)
         var isAlternateImage = false
@@ -45,7 +48,10 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         }
 
 
-
+        btnProfileActivity.setOnClickListener{
+            val intent = Intent(context, ProfileActivity::class.java)
+            startActivity(intent)
+        }
 
 
 
