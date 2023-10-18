@@ -1,5 +1,6 @@
 package com.mobile.macroprojectkelompok11
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,23 +22,26 @@ class InboxActivity : AppCompatActivity() {
             R.drawable.emoji_tidaksehat_mini,
             R.drawable.emoji_sgttidaksehat,
             R.drawable.emoji_tidaksehat_mini,
+            R.drawable.emoji_tidaksehat_mini,
             R.drawable.emoji_tidaksehat_mini
         )
 
         inbox_text_alert = arrayOf(
-            "Perhatian! Kualitas udara di Codet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
-            "Perhatian! Kualitas udara di Codet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
-            "Perhatian! Kualitas udara di Codet saat ini <b>sangat tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
-            "Perhatian! Kualitas udara di Codet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
-            "Perhatian! Kualitas udara di Codet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan."
+            "Perhatian! Kualitas udara di Condet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
+            "Perhatian! Kualitas udara di Condet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
+            "Perhatian! Kualitas udara di Condet saat ini <b>sangat tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
+            "Perhatian! Kualitas udara di Condet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
+            "Perhatian! Kualitas udara di Condet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan.",
+            "Perhatian! Kualitas udara di Condet saat ini <b>tidak sehat</b>. Jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan."
         )
 
         inbox_textdate_alert = arrayOf(
-            "21 Sep, 8:09",
-            "18 Sep, 22:15",
-            "2 Sep, 10:00",
-            "25 Agu, 13:09",
-            "24 Agu, 18:15"
+            getString(R.string.inbox_message_tgl1),
+            getString(R.string.inbox_message_tgl2),
+            getString(R.string.inbox_message_tgl3),
+            getString(R.string.inbox_message_tgl4),
+            getString(R.string.inbox_message_tgl5),
+            getString(R.string.inbox_message_tgl6)
         )
 
         newRecyclerview = findViewById(R.id.recyclerView)
@@ -54,6 +58,15 @@ class InboxActivity : AppCompatActivity() {
             newArrayList.add(inboxmessagealert)
         }
 
-        newRecyclerview.adapter = InboxAlertAdapter(newArrayList)
+        val adapter = InboxAlertAdapter(newArrayList)
+        newRecyclerview.adapter = adapter
+        adapter.setOnItemClickListener(object : InboxAlertAdapter.onItemClickListener{
+            override fun onItemClick(position: Int) {
+
+                val intent = Intent(this@InboxActivity, DetailDataLokasiActivity::class.java)
+                startActivity(intent)
+
+            }
+        } )
     }
 }

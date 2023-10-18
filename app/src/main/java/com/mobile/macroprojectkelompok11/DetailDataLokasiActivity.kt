@@ -17,6 +17,11 @@ class DetailDataLokasiActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Fragment_Riwayat_Jam())
 
+        binding.imageback.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.imageshare.setOnClickListener{
             val message = "Kualitas udara saat ini di Condet adalah PM2.5 sebesar 72 dan AQI mencapai 157. Jika anda berada didaerah ini, jaga kesehatan Anda dan hindari aktivitas di luar ruangan jika memungkinkan."
             intent = Intent(Intent.ACTION_SEND)
