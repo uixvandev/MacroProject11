@@ -105,8 +105,8 @@
             android:layout_marginStart="14dp"
             android:layout_marginTop="195dp"
             android:textColor="@color/black"
-            android:backgroundTint="@color/biru_cyan"
-            android:text="Selengkapnya"
+            android:backgroundTint="@color/primary"
+            android:text="@string/selengkapnya"
             android:textAllCaps="false" />
 
         <TextView
@@ -134,7 +134,7 @@
             android:layout_height="130dp"
             android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
-            android:src="@drawable/gamba2" />
+            android:src="@drawable/gamba1" />
 
         <TextView
             android:layout_width="wrap_content"
