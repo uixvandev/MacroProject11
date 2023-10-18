@@ -48,4 +48,8 @@
     <string name="pengertian_jenis_dan_dampak_polusi">Pengertian jenis dan dampak polusi</string>
     <string name="wawasan_informasi">Wawasan informasi</string>
     <string name="peta_polusi">Peta Polusi</string>
+    <string name="btnhijau">btnHijau</string>
+    <string name="zonahijau">zonahijau</string>
+    <string name="zonamerah">Zona Merah</string>
+    <string name="peta_polusi_title">Peta Polusi</string>
 </resources>
