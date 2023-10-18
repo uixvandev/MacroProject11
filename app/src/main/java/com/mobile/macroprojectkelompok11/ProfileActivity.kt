@@ -15,8 +15,10 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.imageback.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, MainActivity::class.java)
+                finish() // menutup halaman profile
+            //startActivity(intent)
         }
+
     }
 }

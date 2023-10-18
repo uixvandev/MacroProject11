@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.mobile.macroprojectkelompok11.databinding.ActivityInboxBinding
+import com.mobile.macroprojectkelompok11.databinding.ActivityProfileBinding
 
 class InboxActivity : AppCompatActivity() {
+
+    lateinit var binding : ActivityInboxBinding
 
     private lateinit var newRecyclerview : RecyclerView
     private lateinit var newArrayList : ArrayList<Inbox_Message_Alert>
@@ -15,7 +19,8 @@ class InboxActivity : AppCompatActivity() {
     lateinit var inbox_textdate_alert : Array<String>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inbox)
+        binding = ActivityInboxBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         inbox_image_alert = arrayOf(
             R.drawable.emoji_tidaksehat_mini,
@@ -68,5 +73,9 @@ class InboxActivity : AppCompatActivity() {
 
             }
         } )
+
+        binding.imageback.setOnClickListener{
+            finish() // menutup halaman inbox
+        }
     }
 }

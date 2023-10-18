@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.mobile.macroprojectkelompok11.databinding.ActivityInfoInformasiBinding
 import com.mobile.macroprojectkelompok11.databinding.ActivityInformasiaqidanpm25Binding
 
 class Informasiaqidanpm25_Activity : AppCompatActivity() {
@@ -38,6 +39,11 @@ class Informasiaqidanpm25_Activity : AppCompatActivity() {
             binding.buttonfragmentaqi.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.button_abu))
             binding.buttonfragmentaqi.setTextColor(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.black50percent)))
             replaceFragment(Fragment_Informasi_PM25())
+        }
+
+
+        binding.textView2.setOnClickListener {
+            finish() // menutup halaman informasiAQIdanPM2.5
         }
     }
 

@@ -24,7 +24,7 @@ class wawasaninformasi : Fragment(R.layout.fragment_wawasaninformasi) {
         super.onViewCreated(view, savedInstanceState)
 
         val cardView = binding?.cardView2
-        val detailButton = binding?.buttondetailwawasaninformasi
+        val detailButton = binding?.buttondetailwawasaninformasi2
 
         detailButton?.setOnClickListener{
             val intent = Intent(context, InfoInformasi::class.java)

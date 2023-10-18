@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.MapView
@@ -26,12 +27,48 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(this)
 
+<<<<<<< HEAD
         val btnProfileActivity = rootView.findViewById<ImageView>(R.id.profile)
 
+=======
+        val profile = rootView.findViewById<ImageView>(R.id.profile)
+        val infoIcon  = rootView.findViewById<ImageView>(R.id.infoIcon)
+        val inbox = rootView.findViewById<ImageView>(R.id.inboxNotifikasi)
+>>>>>>> 4907564b59dda9792ed9e564528e8ed3607c0873
         val btnUdaraBersih = rootView.findViewById<ImageView>(R.id.btnUdaraBersih)
         val imageView15 = rootView.findViewById<ImageView>(R.id.imageView15)
         var isAlternateImage = false
         var originalImage: Int = R.drawable.zona_merah // Simpan gambar awal di sini
+
+        profile.setOnClickListener{
+            val intent = Intent(context, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        infoIcon.setOnClickListener{
+            val intent = Intent(context, Informasiaqidanpm25_Activity::class.java)
+            startActivity(intent)
+        }
+
+        inbox.setOnClickListener {
+            val intent = Intent(context, InboxActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        // Atur listener untuk imageView15
+        imageView15.setOnClickListener {
+            // Inisiasi FragmentKlikDaerah
+            val fragmentKlikDaerah = klikdaerah()
+
+            // Memulai transaksi Fragment
+            val transaction: FragmentTransaction =requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.containermaps, fragmentKlikDaerah)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+
 
         btnUdaraBersih.setOnClickListener {
             if (isAlternateImage) {
