@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".FragmentHome">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,14 +36,156 @@
             android:id="@+id/text_lokasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
             android:text="@string/lokasi"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />
 
-    </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chard2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/ind_tidaksehat"
+            app:cardCornerRadius="12dp">
 
+            <TextView
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Terakhir di perbarui 09.30,29 sep 2023"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/putih"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/icon_lokasi"
+                android:text="condet"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/circle_graph_aqi_hal_detail_lokasi"
+                android:gravity="center"
+                android:text="157"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imagealert"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_lingkaran"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="5dp"
+                android:src="@drawable/icon_alert"/>
+
+            <ImageView
+                android:id="@+id/imageshare"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/background_lingkaran"
+                android:padding="5dp"
+                android:src="@drawable/icon_share"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="80dp"
+                android:text="Tidak sehat"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="208dp"
+                android:layout_marginTop="90dp"
+                android:text="AQI"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="285dp"
+                android:layout_marginTop="90dp"
+                android:text="PM 2.8"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/circle_graph_pm25_hal_detail_lokasi"
+                android:gravity="center"
+                android:text="72"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/emoji_tidaksehat"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:text="Peta"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="376dp"
+            android:layout_height="209dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ada"/>
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:text="Wawasan informasi"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/adawawasan"/>
+    </LinearLayout>
+    </ScrollView>
 </FrameLayout>
