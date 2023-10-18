@@ -27,14 +27,9 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         mapView.onCreate(savedInstanceState)
         mapView.getMapAsync(this)
 
-<<<<<<< HEAD
-        val btnProfileActivity = rootView.findViewById<ImageView>(R.id.profile)
-
-=======
         val profile = rootView.findViewById<ImageView>(R.id.profile)
         val infoIcon  = rootView.findViewById<ImageView>(R.id.infoIcon)
         val inbox = rootView.findViewById<ImageView>(R.id.inboxNotifikasi)
->>>>>>> 4907564b59dda9792ed9e564528e8ed3607c0873
         val btnUdaraBersih = rootView.findViewById<ImageView>(R.id.btnUdaraBersih)
         val imageView15 = rootView.findViewById<ImageView>(R.id.imageView15)
         var isAlternateImage = false
@@ -85,7 +80,7 @@ class FragmentMaps : Fragment(), OnMapReadyCallback {
         }
 
 
-        btnProfileActivity.setOnClickListener{
+        profile.setOnClickListener{
             val intent = Intent(context, ProfileActivity::class.java)
             startActivity(intent)
         }

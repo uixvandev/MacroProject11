@@ -10,7 +10,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        val splashTime: Long = 2000 // lama splashscreen berjalan
+        val splashTime: Long = 6000 // lama splashscreen berjalan
 
         // Menggunakan Handler untuk menunda perpindahan ke MainActivity
         Handler().postDelayed({
